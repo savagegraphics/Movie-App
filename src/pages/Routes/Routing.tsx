@@ -5,10 +5,10 @@ import Link from 'next/link';
 // import OtherSkills from './OtherSkills'
 // import Accordion from './Accordion';
 import Hero from '@/components/MovieSearch/Hero';
-import MoviesCards from '@/components/heythere/MoviesCards';
+import MoviesCards from '@/components/CardDetails/MoviesCards';
 import Moviesearchcards, { MovieResult } from '@/pages/Moviesearchcards';
 import LandingPage from '../LandingPage'
-import NavHero from '@/components/heythere/Nav&Hero'
+import NavHero from '@/components/CardDetails/Nav&Hero'
 
 
 type Props = {};
@@ -33,7 +33,6 @@ const ResumeList = (props: Props) => {
     case 'App Design':
       // Replace this with the component/content for App Design
       contentToShow = <Moviesearchcards onSearch={function (searchResults: MovieResult[]): void {
-          throw new Error('Function not implemented.');
       } } />;
       break;
     default:

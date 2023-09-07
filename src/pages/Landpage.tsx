@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import RightSidebar from './RightSidebar';
-import NavHero from '@/components/heythere/Nav&Hero';
+import NavHero from '@/components/CardDetails/Nav&Hero';
 import Favorites from './Favorites'
 
 type Props = {}
@@ -33,8 +33,8 @@ const Landpage = (props: Props) => {
               <button
                 className={`h-12 px-2 py-2 -mb-px text-sm text-center ${
                   activeButton === 'Animation'
-                    ? 'text-indigo-300 border-b-2 border-indigo-500'
-                    : 'text-gray-800 border-b-2 border-gray-200'
+                  ? 'text-white border-b-2 border-indigo-500'
+                  : 'text-gray-300'
                 } sm:text-base dark:text-white whitespace-nowrap cursor-pointer focus:outline-none dark:border-gray-700 dark:hover:border-gray-400 hover:border-gray-400`}
                 onClick={() => handleButtonClick('Animation')}
               >
@@ -44,8 +44,8 @@ const Landpage = (props: Props) => {
           <button
               className={`h-12 px-8 py-2 -mb-px text-sm text-center ${
                 activeButton === 'Web Design'
-                ? 'text-indigo-300 border-b-2 border-indigo-500'
-                : 'text-gray-800 border-b-2 border-gray-200'
+                ? 'text-white border-b-2 border-indigo-500'
+                : 'text-gray-300'
              } sm:text-base dark:text-white whitespace-nowrap cursor-pointer focus:outline-none dark:border-gray-700 dark:hover:border-gray-400 hover:border-gray-400`}
               onClick={() => handleButtonClick('Web Design')}
             >

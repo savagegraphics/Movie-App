@@ -41,15 +41,15 @@ const RightSidebar = () => {
           <div key={index} className="flex px-1 py-4">
             <img alt="" className="flex-shrink-0 object-cover w-20 h-20 mr-4 dark:bg-gray-500" src={movie.Poster} />
             <div className="flex flex-col flex-grow">
-              <a rel="noopener noreferrer" href="#" className="font-serif hover:underline">
+              <a rel="noopener noreferrer" href="#" className="text-white font-serif hover:underline">
                 {movie.Title}
               </a>
-              <p className="mt-auto text-xs dark:text-gray-400">
+              <p className="mt-auto text-xs text-white">
                 {movie.Description}
                 <a
                   rel="noopener noreferrer"
                   href="#"
-                  className="block dark:text-blue-400 lg:ml-2 lg:inline hover:underline"
+                  className="block text-white dark:text-blue-400 lg:ml-2 lg:inline hover:underline"
                 >
                   {movie.Date}
                 </a>

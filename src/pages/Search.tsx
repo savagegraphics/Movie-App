@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Hero from '@/components/MovieSearch/Hero';
 import Moviesearchcards from '@/pages/Moviesearchcards';
-import MoviesCards from '@/components/heythere/MoviesCards';
+import MoviesCards from '@/components/CardDetails/MoviesCards';
 import Cards from './Cards';
 import SidebarRight from './Landpage'; // Import the RightSidebar component
 import Routing from './Routes/Routing'

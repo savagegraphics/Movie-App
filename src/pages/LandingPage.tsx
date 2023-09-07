@@ -5,9 +5,9 @@ import { XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from '@heroicons/react/20/solid'
 import Landpage from './Landpage'
 import Filter from './Filter'
-import NavHero from '@/components/heythere/Nav&Hero'
+import NavHero from '@/components/CardDetails/Nav&Hero'
 import { useState, useEffect } from 'react';
-import MoviesCards from '@/components/heythere/MoviesCards'
+import MoviesCards from '@/components/CardDetails/MoviesCards'
 import axios from 'axios';
 
 interface Movie {

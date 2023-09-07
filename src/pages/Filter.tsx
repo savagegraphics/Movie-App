@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MobileBar from './MobileBar';
-import NavHero from '@/components/heythere/Nav&Hero';
+import NavHero from '@/components/CardDetails/Nav&Hero';
 import RightSidebar from './RightSidebar';
 import Landpage from './Landpage';
 
