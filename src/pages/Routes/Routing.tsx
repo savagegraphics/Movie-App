@@ -6,7 +6,7 @@ import Link from 'next/link';
 // import Accordion from './Accordion';
 import Hero from '@/components/MovieSearch/Hero';
 import MoviesCards from '@/components/CardDetails/MoviesCards';
-import Moviesearchcards, { MovieResult } from '@/pages/Moviesearchcards';
+import Moviesearchcards from '@/pages/Moviesearchcards';
 import LandingPage from '../LandingPage'
 import NavHero from '@/components/CardDetails/Nav&Hero'
 
@@ -32,8 +32,9 @@ const ResumeList = (props: Props) => {
       break;
     case 'App Design':
       // Replace this with the component/content for App Design
-      contentToShow = <Moviesearchcards onSearch={function (searchResults: MovieResult[]): void {
-      } } />;
+      contentToShow = <Moviesearchcards />;
+      // onSearch={function (searchResults: MovieResult[]): void {
+      // } }
       break;
     default:
       contentToShow = null;
