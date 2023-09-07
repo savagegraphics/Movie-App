@@ -41,13 +41,13 @@ const ResumeList = (props: Props) => {
   }
 
   return (
-    <div>
+    <div className='bg-black'>
     <div className="flex py-4 px-4 overflow-x-auto overflow-y-hidden justify-left">
               <button
                 className={`h-12 pr-8 pl-4 py-2 -mb-px text-sm font-medium text-center ${
                   activeButton === 'Animation'
-                  ? 'text-gray-800 border-b-2 border-indigo-500'
-                  : 'text-gray-500'
+                  ? 'text-white border-b-2 border-indigo-500'
+                  : 'text-gray-300'
                 } sm:text-base dark:text-white whitespace-nowrap cursor-pointer focus:outline-none dark:border-gray-700 dark:hover:border-gray-400 hover:border-gray-400`}
                 onClick={() => handleButtonClick('Animation')}
               >
@@ -57,8 +57,8 @@ const ResumeList = (props: Props) => {
           <button
               className={`h-12 px-8 py-2 -mb-px text-sm font-medium text-center ${
                 activeButton === 'Web Design'
-                ? 'text-gray-800 border-b-2 border-indigo-500'
-                  : 'text-gray-500'
+                ? 'text-white border-b-2 border-indigo-500'
+                : 'text-gray-300'
              } sm:text-base dark:text-white whitespace-nowrap cursor-pointer focus:outline-none dark:border-gray-700 dark:hover:border-gray-400 hover:border-gray-400`}
               onClick={() => handleButtonClick('Web Design')}
             >
@@ -68,8 +68,8 @@ const ResumeList = (props: Props) => {
               <button
                 className={`h-12 px-8 py-2 -mb-px text-sm font-medium text-center ${
                   activeButton === 'App Design'
-                  ? 'text-gray-800 border-b-2 border-indigo-500'
-                  : 'text-gray-500'
+                  ? 'text-white border-b-2 border-indigo-500'
+                  : 'text-gray-300'
               } sm:text-base dark:text-white whitespace-nowrap cursor-pointer focus:outline-none dark:border-gray-700 dark:hover:border-gray-400 hover:border-gray-400`}
                 onClick={() => handleButtonClick('App Design')}
               >

@@ -58,7 +58,7 @@ export default function Example() {
   
 
   return (
-    <div className="bg-white">
+    <div className="bg-black">
       <div>
         {/* Mobile filter dialog */}
         <Transition.Root show={mobileFiltersOpen} as={Fragment}>
@@ -135,7 +135,7 @@ export default function Example() {
               {/* Product grid */}
               <div className="lg:col-span-3">
               {movieDetails.map((data, index) => (
-              <div
+              <div key={index}
           className="relative flex col-span-12 bg-center mb-8 rounded-3xl bg-no-repeat bg-cover dark:bg-gray-500 xl:col-span-6 lg:col-span-5 md:col-span-9 lg:mr-4 h-[24rem]"
           style={{ backgroundImage: `url('${data.Poster}')` }}
         >
