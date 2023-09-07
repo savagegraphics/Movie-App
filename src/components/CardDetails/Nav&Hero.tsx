@@ -36,7 +36,7 @@ const MoviesCards = () => {
   }, []);
 
   return (
-    <div className="bg-black rounded-2xl">
+    <div className="bg-gray-950 rounded-2xl m-12">
     <div className="mx-auto max-w-2xl px-4 py-4 sm:px-6 sm:py-4 lg:max-w-7xl lg:px-8">
       <h2 className="text-2xl font-bold tracking-tight text-white">All Time Top Rated TV Series</h2>
 
