@@ -35,7 +35,7 @@ const RightSidebar = () => {
   }, []);
 
   return (
-    <div className="hidden bg-black ml-8 xl:col-span-3 lg:col-span-4 md:hidden lg:block">
+    <div className="bg-black ml-8 xl:col-span-3 lg:col-span-4 md:hidden lg:block">
       <div className="flex flex-col divide-y divide-gray-700">
         {movies.map((movie, index) => (
           <div key={index} className="flex px-1 py-4">

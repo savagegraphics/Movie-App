@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 
-/* :root {
-  background: #000;
-} */
+.body {
+  background-color: black;
+}

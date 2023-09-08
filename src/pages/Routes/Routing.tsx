@@ -78,7 +78,7 @@ const ResumeList = (props: Props) => {
            
           </div>
           {/* Display the dynamic content */}
-          <div className="mt-8">
+          <div className="mt-8 bg-black">
             {contentToShow}
           </div>
         </div>

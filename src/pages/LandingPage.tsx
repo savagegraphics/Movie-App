@@ -9,6 +9,7 @@ import NavHero from '@/components/CardDetails/Nav&Hero'
 import { useState, useEffect } from 'react';
 import MoviesCards from '@/components/CardDetails/MoviesCards'
 import axios from 'axios';
+import PhoneSidebar from './PhoneSidebar'
 
 interface Movie {
   Poster: string;
@@ -85,7 +86,7 @@ export default function Example() {
                 leaveFrom="translate-x-0"
                 leaveTo="translate-x-full"
               >
-                <Dialog.Panel className="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-12 shadow-xl">
+                <Dialog.Panel className="bg-black relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto py-4 pb-12 shadow-xl">
                   <div className="flex items-right justify-end px-4">
                   <button
                       type="button"
@@ -98,8 +99,8 @@ export default function Example() {
                   </div>
 
                   {/* Filters */}
-                  <form className="">
-                  <Landpage />
+                  <form className="bg-black">
+                 <PhoneSidebar/>
                   </form>
                 </Dialog.Panel>
               </Transition.Child>
