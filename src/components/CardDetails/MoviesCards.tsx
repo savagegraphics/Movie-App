@@ -20,7 +20,7 @@ const MoviesCards = () => {
     const fetchMovieDetails = async () => {
       const movieDetailsPromises = movieTitles.map(async (title) => {
         try {
-          const response = await axios.get(`http://www.omdbapi.com/?apikey=${apiKey}&t=${title}`);
+          const response = await axios.get(`https://www.omdbapi.com/?apikey=${apiKey}&t=${title}`);
           return response.data as Movie;
         } catch (error) {
           console.error(`Error fetching movie details for ${title}:`, error);
